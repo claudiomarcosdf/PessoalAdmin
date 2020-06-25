@@ -1,0 +1,222 @@
+<div class="grid-container">
+  <mat-card>
+    <mat-card-content>
+      <div class="grid-container">
+        <h1 class="mat-h1">Cadastro de Policial</h1>
+        <div class="tp-container">
+          <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+            <p>
+              <mat-form-field hintLabel="Max. 10 caracteres">
+                <input matInput #matricula
+                  maxlength="10"
+                  placeholder="Matrícula"
+                  class="uppercase"
+                  formControlName="matricula"
+                />
+                <mat-hint align="end">{{ matricula.value?.length || 0 }}/10</mat-hint>
+                <mat-icon matSuffix>assignment_ind</mat-icon>
+              </mat-form-field>
+
+              <mat-slide-toggle class="slide-button" formControlName="transferido" #transferido
+                  [checked]="transferido">
+                  Transferido
+              </mat-slide-toggle>
+
+            </p>
+            <mat-form-field style="width: 100%;">
+              <input
+                matInput
+                placeholder="Nome de guerra"
+                formControlName="nomeGuerra"
+
+              />
+            </mat-form-field>
+            <p>
+              <mat-form-field>
+                <mat-select
+                  placeholder="Quadro"
+                  formControlName="quadro"
+                  id="quadro"
+                >
+                  <mat-option
+                    *ngFor="let quadro of quadros"
+                    [value]="quadro.sigla"
+                    >{{ quadro.sigla }}</mat-option
+                  >
+                </mat-select>
+              </mat-form-field>
+              <mat-form-field style="padding-left: 20px;">
+                <mat-select
+                  placeholder="Posto/Graduação"
+                  formControlName="postoGraduacao"
+                  id="postoGraduacao"
+                >
+                  <mat-option
+                    *ngFor="let patente of patentes"
+                    [value]="patente.sigla"
+                    >{{ patente.sigla }}</mat-option
+                  >
+                </mat-select>
+              </mat-form-field>
+            </p>
+            <p>
+              <mat-form-field>
+                <input
+                  type="date"
+                  matInput
+                  placeholder="Data de ingresso"
+                  formControlName="dataIngresso"
+                />
+              </mat-form-field>
+              <mat-form-field style="padding-left: 20px;">
+                <input
+                  type="number"
+                  matInput
+                  placeholder="Matrícula SIAPE"
+                  formControlName="siape"
+                />
+              </mat-form-field>
+              <mat-form-field style="padding-left: 20px;">
+                <input
+                  type="date"
+                  matInput
+                  placeholder="Bienal validade"
+                  formControlName="bienalValidade"
+                />
+              </mat-form-field>
+              <mat-form-field style="padding-left: 20px;">
+                <input
+                  type="date"
+                  matInput
+                  placeholder="Último TAF"
+                  formControlName="tafData"
+                />
+              </mat-form-field>
+            </p>
+            <mat-form-field style="width: 100%;">
+              <input
+                matInput
+                placeholder="Nome completo"
+                formControlName="nome"
+              />
+            </mat-form-field>
+            <p>
+              <mat-radio-group formControlName="genero">
+                <mat-radio-button
+                  *ngFor="let genero of generos"
+                  [value]="genero.valor"
+                >
+                  {{ genero.descricao }}
+                </mat-radio-button>
+              </mat-radio-group>
+              <mat-form-field style="padding-left: 30px;">
+                <input
+                  type="date"
+                  matInput
+                  placeholder="Data de nascimento"
+                  formControlName="dataNascimento"
+                />
+              </mat-form-field>
+              <mat-form-field style="padding-left: 20px;">
+                <input
+                  matInput
+                  placeholder="CPF"
+                  formControlName="cpf"
+                  mascara="999.999.999-99"
+                />
+              </mat-form-field>
+              <mat-form-field style="padding-left: 20px;">
+                <input
+                  type="date"
+                  matInput
+                  placeholder="CNH validade"
+                  formControlName="cnhValidade"
+                />
+              </mat-form-field>
+              <mat-form-field style="padding-left: 20px;">
+                <mat-select
+                  placeholder="Categoria"
+                  formControlName="categoria"
+                  id="categoria"
+                >
+                  <mat-option
+                    *ngFor="let cat of categorias"
+                    [value]="cat.sigla"
+                    >{{ cat.sigla }}</mat-option
+                  >
+                </mat-select>
+              </mat-form-field>
+            </p>
+
+            <p class="zero" formGroupName="endereco">
+              <mat-form-field>
+                <input
+                  matInput
+                  placeholder="CEP"
+                  formControlName="cep"
+                  mascara="99.999-999"
+                  (blur)="consultaCEP()"
+                />
+              </mat-form-field>
+              <mat-form-field style="padding-left: 20px; width: 700px;">
+                <input
+                  matInput
+                  placeholder="Endereço"
+                  formControlName="endereco"
+                  class="uppercase"
+                />
+              </mat-form-field>
+              <mat-form-field style="padding-left: 20px; width: 400px;">
+                <input
+                  matInput
+                  placeholder="Complemento"
+                  formControlName="complemento"
+                  class="uppercase"
+                />
+              </mat-form-field>
+              <mat-form-field style="padding-left: 20px;">
+                <input
+                  matInput
+                  placeholder="Número"
+                  formControlName="numero"
+                  class="uppercase"
+                />
+              </mat-form-field>
+            </p>
+
+            <p class="zero" formGroupName="endereco">
+              <mat-form-field>
+                <input
+                  matInput
+                  placeholder="Celular"
+                  formControlName="celular"
+                />
+              </mat-form-field>
+              <mat-form-field style="padding-left: 20px;">
+                <input
+                  matInput
+                  placeholder="Telefone"
+                  formControlName="telefone"
+                />
+              </mat-form-field>
+              <mat-form-field style="padding-left: 20px; width: 630px;">
+                <input matInput placeholder="Email" formControlName="email" class="lowercase" />
+              </mat-form-field>
+            </p>
+
+            <div class="button-row">
+              <button
+                mat-raised-button
+                color="primary"
+                [disabled]="formulario.invalid"
+              >
+                Salvar
+              </button>
+              <button mat-raised-button (click)="onCancel()">Cancelar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

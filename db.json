@@ -1,0 +1,170 @@
+{
+  "policiais": [
+    {
+      "id": "5dd565133c177253af14e3f4",
+      "matricula": 729183,
+      "nomeGuerra": "Claudio Marcos",
+      "quadro": "QPPMC",
+      "postoGraduacao": "3º SGT",
+      "dataIngresso": "2002-06-24",
+      "siape": "1234567",
+      "tafData": "2019-07-01",
+      "genero": "M",
+      "dataNascimento": "1974-07-18",
+      "nome": "claudio marcos de jesus",
+      "cpf": "60184574153",
+      "endereco": {
+        "cep": "71939360",
+        "endereco": "Quadra 203 Sul (Águas Claras)",
+        "numero": "502b",
+        "complemento": "Brasília",
+        "telefone": "30112903",
+        "celular": "999763771"
+      },
+      "cnhValidade": "2022-07-05",
+      "categoria": "AD",
+      "transferido": true,
+      "afastamentos": [
+        {
+          "motivo": "LTIP",
+          "dataFim": "2000-01-01",
+          "dataInicio": "2000-01-01"
+        },
+        {
+          "motivo": "DISPENSA MÉDICA",
+          "dataFim": "2019-09-29",
+          "dataInicio": "2019-09-27"
+        }
+      ],
+      "licencas": [
+        {
+          "descricaoLicenca": "teste",
+          "dataFim": "2000-02-02",
+          "dataInicio": "2000-02-02"
+        }
+      ]
+    },
+    {
+      "id": "FGov_wW",
+      "matricula": "745568",
+      "nomeGuerra": "zezinho",
+      "quadro": "QOPME",
+      "postoGraduacao": "2º TEN",
+      "dataIngresso": "2000-05-01",
+      "siape": null,
+      "bienalValidade": null,
+      "tafData": null,
+      "genero": "M",
+      "dataNascimento": "1985-05-17",
+      "nome": "zezinho pipoca",
+      "cpf": null,
+      "endereco": {
+        "cep": "",
+        "endereco": null,
+        "numero": null,
+        "complemento": null,
+        "telefone": null,
+        "celular": "545544885",
+        "email": null
+      },
+      "cnhValidade": null,
+      "transferido": null
+    },
+    {
+      "id": "YqC2hAR",
+      "matricula": "124457",
+      "nomeGuerra": "f cunha",
+      "quadro": "QPPMC",
+      "postoGraduacao": "1º SGT",
+      "dataIngresso": "1993-08-20",
+      "siape": 9999999,
+      "bienalValidade": null,
+      "tafData": null,
+      "genero": "M",
+      "dataNascimento": "1971-03-28",
+      "nome": "fernando cunha",
+      "cpf": "45698741288",
+      "endereco": {
+        "cep": "71939360",
+        "endereco": "a",
+        "numero": null,
+        "complemento": "c",
+        "telefone": null,
+        "celular": "988756215"
+      },
+      "cnhValidade": null,
+      "transferido": true
+    },
+    {
+      "id": "aqyhvre",
+      "matricula": "1896663",
+      "nomeGuerra": "patrícia",
+      "quadro": "QPPMC",
+      "postoGraduacao": "SD",
+      "dataIngresso": "2020-01-30",
+      "siape": 222555,
+      "bienalValidade": null,
+      "tafData": null,
+      "genero": "F",
+      "dataNascimento": "1995-03-14",
+      "nome": "patrícia abravanel prado",
+      "cpf": "12345678900",
+      "endereco": {
+        "cep": "71680230",
+        "endereco": "SMDB Conjunto 23 Setor de Mansões Dom Bosco (Lago Sul)",
+        "numero": null,
+        "complemento": " Brasília",
+        "telefone": null,
+        "celular": "999888777"
+      },
+      "cnhValidade": "2025-03-20",
+      "categoria": "B",
+      "transferido": null,
+      "afastamentos": [
+        {
+          "motivo": "DISPENSA MÉDICA",
+          "dataFim": "2020-04-08",
+          "dataInicio": "2020-04-07"
+        }
+      ],
+      "licencas": [
+        {
+          "descricaoLicenca": "FÉRIAS 2020",
+          "dataFim": "2020-05-04",
+          "dataInicio": "2020-05-05"
+        }
+      ],
+      "cursos": []
+    },
+    {
+      "id": "COB9o5c",
+      "matricula": "502228",
+      "nomeGuerra": "nunes xavier",
+      "quadro": "QOPM",
+      "postoGraduacao": "MAJ",
+      "dataIngresso": "1990-06-10",
+      "siape": null,
+      "bienalValidade": null,
+      "tafData": null,
+      "genero": "M",
+      "dataNascimento": null,
+      "nome": "francisco nunes xavier",
+      "cpf": null,
+      "endereco": {
+        "cep": "71939360",
+        "endereco": "Quadra 203 Sul (Águas Claras)",
+        "numero": null,
+        "complemento": " Brasília",
+        "telefone": null,
+        "celular": "123456789",
+        "email": null
+      },
+      "cnhValidade": null,
+      "categoria": null,
+      "transferido": null,
+      "afastamentos": [],
+      "licencas": [],
+      "cursos": []
+    }
+  ]
+}

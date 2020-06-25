@@ -1,0 +1,43 @@
+.tp-container {
+      display: flex;
+      flex-direction: column;
+      font-size: larger;
+}
+
+.tp-container>* {
+      width: 100%;
+}
+
+.grid-container {
+      margin: 20px;
+}
+
+.mat-radio-button ~ .mat-radio-button {
+      margin-left: 16px;
+}
+
+.zero {
+      padding: 0px;
+      margin-top: 0em;
+      margin-bottom: 0em;
+}
+
+.button-row button {
+  margin-top: 10px;
+  margin-right: 8px;
+}
+
+.lowercase {
+      text-transform: lowercase;
+}
+
+input {
+      text-transform: uppercase;
+      font-weight: normal;
+}
+
+.slide-button {
+  position: absolute;
+  top: 100px;
+  right: 40px;
+}

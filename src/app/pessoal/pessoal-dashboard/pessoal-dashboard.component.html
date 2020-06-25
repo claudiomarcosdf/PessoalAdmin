@@ -1,0 +1,69 @@
+<div class="grid-container">
+      <h1 class="mat-h1">Administração policial</h1>
+      <mat-grid-list cols="2" rowHeight="180px">
+        <mat-grid-tile [colspan]="2" [rowspan]="1">
+          <mat-card class="dashboard-card">
+            <mat-card-header>
+              <mat-card-title>
+                Dados gerais
+              </mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="dashboard-card-content">
+              <div>
+                  <mat-list>
+                    <mat-list-item class="dados-gerais"> {{ identificacao }} </mat-list-item>
+                      <mat-grid-list cols="2" rowHeight="20px">
+                        <mat-grid-tile>
+                          <mat-list-item class="dados-gerais"> {{ contatos }} </mat-list-item>
+                        </mat-grid-tile>
+                        <mat-grid-tile >
+                          <mat-list-item  class="dados-gerais"><div id="tamanho"> {{ tempoServicoFull }} </div></mat-list-item>
+                        </mat-grid-tile>
+                      </mat-grid-list>
+                  </mat-list>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+
+<!-- AFASTAMENTOS -->
+      <mat-grid-list cols="2" rowHeight="470px">
+        <mat-grid-tile>
+            <mat-card class="dashboard-card">
+
+                <app-afastamento-page></app-afastamento-page>
+
+            </mat-card>
+        </mat-grid-tile>
+
+<!-- FÉRIAS/ABONO -->
+
+        <mat-grid-tile>
+            <mat-card class="dashboard-card">
+
+              <app-feriasabono-page></app-feriasabono-page>
+
+            </mat-card>
+        </mat-grid-tile>
+
+      </mat-grid-list>
+
+<!-- CURSOS -->
+
+      <mat-grid-list cols="1" rowHeight="470px">
+        <mat-grid-tile>
+          <mat-card class="dashboard-card">
+            <mat-card-header>
+              <mat-card-title>
+                Cursos
+              </mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="dashboard-card-content">
+              <div>Conteúdo dos cursos</div>
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+
+</div>

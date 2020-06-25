@@ -1,0 +1,44 @@
+{
+  "policiais": [
+    {
+      "id": 1,
+      "matricula": 729183,
+      "nome_guerra": "CLAUDIO MARCOS",
+      "posto_graduacao": "3º SGT",
+      "quadro": "QPPMC",
+      "celular": "999763771"
+    },
+    {
+      "id": 2,
+      "matricula": 234781,
+      "nome_guerra": "M. ARAÚJO",
+      "posto_graduacao": "2º SGT",
+      "quadro": "QPPME",
+      "celular": "999001523"
+    },
+    {
+      "id": 3,
+      "matricula": 504569,
+      "nome_guerra": "PEDRO HENRIQUE",
+      "posto_graduacao": "MAJ",
+      "quadro": "QOPM",
+      "celular": "9985745698"
+    },
+    {
+      "id": 4,
+      "matricula": 145876,
+      "nome_guerra": "TORRES",
+      "posto_graduacao": "ST",
+      "quadro": "QPPMC",
+      "celular": "981457862"
+    },
+    {
+      "id": 5,
+      "matricula": 1248537,
+      "nome_guerra": "HIGOR GOMES",
+      "posto_graduacao": "SD",
+      "quadro": "QPPMC",
+      "celular": "985745697"
+    }
+  ]
+}

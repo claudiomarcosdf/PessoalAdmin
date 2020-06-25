@@ -1,0 +1,30 @@
+<h1 mat-dialog-title>Incluir afastamento</h1>
+<form name="formulario" #f="ngForm" (keydown.enter)="$event.preventDefault()">
+<div mat-dialog-content class="tp-container">
+
+  <mat-form-field>
+      <mat-select placeholder="Selecione o motivo" [(ngModel)] = "data.motivo" id="motivo" name="motivo"
+       #motivo="ngModel" required>
+      <mat-option *ngFor="let motivo of tiposAfastamentos" [value]="motivo.sigla">
+        {{ motivo.sigla }}
+      </mat-option>
+    </mat-select>
+
+  </mat-form-field>
+  <mat-form-field>
+      <input matInput type="date" [(ngModel)] = "data.dataInicio" placeholder="Data inicial" name="dataInicio"
+       #dataInicio="ngModel"required/>
+  </mat-form-field>
+  <mat-form-field>
+      <input matInput type="date" [(ngModel)] = "data.dataFim" placeholder="Data final" name="dataFim"
+       #dataFim="ngModel"required/>
+  </mat-form-field>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancelar</button>
+  <button [disabled]="f.invalid" mat-raised-button color="primary" [mat-dialog-close]="data">Ok</button>
+
+</div>
+</form>
+

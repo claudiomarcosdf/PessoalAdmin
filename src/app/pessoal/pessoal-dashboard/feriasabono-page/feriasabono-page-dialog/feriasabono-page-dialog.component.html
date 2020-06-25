@@ -1,0 +1,25 @@
+<h1 mat-dialog-title>Incluir licença</h1>
+<form name="formulario" #f="ngForm" (keydown.enter)="$event.preventDefault()">
+<div mat-dialog-content class="tp-container">
+
+  <mat-form-field>
+    <input matInput type="text" [(ngModel)] = "data.descricaoLicenca" placeholder="Descrição da licença (ex.: Férias 2019)" name="descricaoLicenca"
+    #descricaoLicenca="ngModel"required/>
+
+  </mat-form-field>
+  <mat-form-field>
+      <input matInput type="date" [(ngModel)] = "data.dataInicio" placeholder="Data inicial" name="dataInicio"
+       #dataInicio="ngModel"required/>
+  </mat-form-field>
+  <mat-form-field>
+      <input matInput type="date" [(ngModel)] = "data.dataFim" placeholder="Data final" name="dataFim"
+       #dataFim="ngModel"required/>
+  </mat-form-field>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancelar</button>
+  <button [disabled]="f.invalid" mat-raised-button color="primary" [mat-dialog-close]="data">Ok</button>
+
+</div>
+</form>

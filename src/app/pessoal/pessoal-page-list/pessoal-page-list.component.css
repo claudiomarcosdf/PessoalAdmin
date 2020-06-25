@@ -1,0 +1,30 @@
+.full-width-table {
+  width: 100%;
+}
+
+.text-inside-grid-left {
+  position: absolute;
+  left: 5px;
+}
+
+.text-inside-grid-right {
+  position: absolute;
+  right: 5px;
+}
+
+.margem-button-row button {
+  margin-right: 8px;
+}
+
+td {
+  text-transform: uppercase;
+}
+
+.mat-header-cell {
+  font-weight: bold;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
